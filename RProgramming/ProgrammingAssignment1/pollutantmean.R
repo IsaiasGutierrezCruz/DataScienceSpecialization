@@ -1,4 +1,4 @@
-pollutantmean <- function(directory = "specdata", pollutant, id = 1){
+pollutantmean <- function(directory = "specdata", pollutant, id = 1:332){
   total_amount <- 0
   total_elements <- 0
   for (i in seq_along(id)){
@@ -29,6 +29,5 @@ pollutantmean <- function(directory = "specdata", pollutant, id = 1){
   
   # calculate the mean 
   meanTotal <- total_amount/total_elements
-  #print(meanTotal)
 }
 
