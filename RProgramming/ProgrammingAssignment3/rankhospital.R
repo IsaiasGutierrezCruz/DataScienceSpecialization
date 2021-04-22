@@ -1,5 +1,5 @@
-# Finding the best hospital in a state 
-best <- function(state, outcome) {
+# rank the hospital 
+rankhospital <- function(state, outcome, num = "best") {
   # load the data 
   fileData <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
   
@@ -23,9 +23,22 @@ best <- function(state, outcome) {
   dataState <- datacomplete[datacomplete[2] == state, ]
   # convert the data type character to numeric
   dataState[, 3] <- as.numeric(dataState[, 3])
-  # get the minor mortality
-  minMortality <- dataState[dataState[, 3] == min(as.numeric(dataState[, 3])), ]
-  #get the name of the hospital
-  name <- minMortality[, 1]
-  name
+  
+  # order the data and get the hospital's name by the position set 
+  sortData <- dataState[with(dataState, order(dataState[3], dataState[1])), ]
+  rowsNumbers <- nrow(dataState)
+  if (num == "best"){
+    result <- sortData[1, ]
+  } else if (num == "worst"){
+    result <- sortData[rowsNumbers, ]
+  } else if (num > rowsNumbers){
+    result <- NA
+  } else {
+    result <- sortData[num, ]
+  }
+  
+  if (!is.na(result[1][1])){
+    result <- result[, 1]
+  }
+  result
 }
