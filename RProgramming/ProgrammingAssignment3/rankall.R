@@ -48,3 +48,6 @@ rankall <- function(outcome, num = "best") {
   colnames(numEachState) <- c("hospital", "state")
   numEachState
 }
+
+r <- rankall("heart failure", 10)
+as.character(subset(r, state == "NV")$hospital)
