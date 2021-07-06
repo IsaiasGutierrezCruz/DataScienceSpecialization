@@ -46,6 +46,8 @@ nchar(lines[30])
 nchar(lines[100])
 
 # ----- 5. -----
+# Read this data set into R and report the sum of the numbers in the 
+# fourth of the nine columns
 df <- read.fwf("getdata_wksst8110.for", widths = c(13, 6, 7, 6, 7, 6, 7, 6, 4), 
                header = FALSE, skip = 3)
 colnames(df) <- df[1, ]
