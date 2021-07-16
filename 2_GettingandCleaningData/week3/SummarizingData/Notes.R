@@ -22,4 +22,8 @@ head(mtcars)
 row.names(mtcars)
 
 mtcars$carname <- rownames(mtcars)
-carMelt <- melt(mtcars, id=c("carname", "gear", "cyl"), measure.vars = c("mpg", "hp")) 
+carMelt <- melt(mtcars, id=c("carname", "gear", "cyl"), measure.vars = c("mpg", "hp"))  
+
+cylData <- dcast(carMelt, cyl ~ variable, mean)
+
+data("InsectSprays")
