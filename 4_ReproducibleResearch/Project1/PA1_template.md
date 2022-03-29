@@ -54,7 +54,7 @@ total_stepsperDay
 hist(total_stepsperDay$total_number, main = "Total steps taken each day", xlab = "Total steps")
 ```
 
-![plot of chunk unnamed-chunk-71](figure/unnamed-chunk-71-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 ### Calculate and report the mean and median of the total number of steps taken per day
 
 ```r
@@ -86,7 +86,7 @@ plot(unique(data$interval), averageSteps_per_interval$average_steps, type = "l",
      xlab = "Number of Interval")
 ```
 
-![plot of chunk unnamed-chunk-73](figure/unnamed-chunk-73-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 ### Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
 ```r
@@ -127,7 +127,7 @@ total_stepsperDayWithoutNA <- dataWithoutNA %>% group_by(date) %>% summarize(tot
 hist(total_stepsperDayWithoutNA$total_number, main = "Total steps taken each day", xlab = "Total steps")
 ```
 
-![plot of chunk unnamed-chunk-77](figure/unnamed-chunk-77-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ```r
 # mean 
@@ -186,5 +186,5 @@ plot(unique(dataWithoutNA$interval),
      xlab = "Number of Interval")
 ```
 
-![plot of chunk unnamed-chunk-79](figure/unnamed-chunk-79-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 

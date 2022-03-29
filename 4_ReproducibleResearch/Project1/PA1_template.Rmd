@@ -1,8 +1,9 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
+title: 'Reproducible Research: Peer Assessment 1'
+output:
+  pdf_document: default
   html_document:
-    keep_md: true
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -38,6 +39,7 @@ total_stepsperDay
 ```{r}
 hist(total_stepsperDay$total_number, main = "Total steps taken each day", xlab = "Total steps")
 ```
+
 ### Calculate and report the mean and median of the total number of steps taken per day
 ```{r}
 # mean 
@@ -55,6 +57,7 @@ plot(unique(data$interval), averageSteps_per_interval$average_steps, type = "l",
      ylab = "Average number of steps taken",
      xlab = "Number of Interval")
 ```
+
 ### Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```{r}
 averageSteps_per_interval[averageSteps_per_interval$average_steps == max(averageSteps_per_interval$average_steps), ]
@@ -65,7 +68,9 @@ averageSteps_per_interval[averageSteps_per_interval$average_steps == max(average
 ```{r}
 length(which(is.na(data$steps)))
 ```
+
 ### Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
+
 ```{r}
 dataWithoutNA <- data
 dataWithoutNA$steps[is.na(dataWithoutNA$steps)] <- 0
@@ -90,12 +95,14 @@ Yes, they do. The frequencies where were the NA values increased. And the median
 ## Are there differences in activity patterns between weekdays and weekends?
 
 ### Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.
+
 ```{r}
 dataWithoutNA <- dataWithoutNA %>% mutate(typeOfDay = ifelse(weekdays(date) == "domingo" | weekdays(date) == "sábado", 
                                             "weekend", "weekday"))
 ```
 
 ### Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).
+
 ```{r}
 averageSteps_per_intervalWeekdays <- dataWithoutNA %>% 
   filter(typeOfDay == "weekday") %>% group_by(interval) %>% 
