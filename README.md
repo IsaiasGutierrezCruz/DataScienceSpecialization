@@ -24,3 +24,7 @@ This course does not have programming assignments and is an introduction to the 
 
 ### 2. R Programming
 - [Assignment 1. Air pollution](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/1_RProgramming/ProgrammingAssignment1)
+- [Assignment 2. Lexical Scoping](https://github.com/IsaiasGutierrezCruz/ProgrammingAssignment2)
+- [Assignment 3. Hospital Quality](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/1_RProgramming/ProgrammingAssignment3)
+
+### 3. 
