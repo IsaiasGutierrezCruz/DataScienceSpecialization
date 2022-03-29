@@ -39,8 +39,24 @@ This course does not have programming assignments and is an introduction to the 
 
 ### 4. Exploratory Data Analysis 
 - [Assignment 1. Exploratory Data Analysis](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/3_ExploratoryDataAnalysis/week1/CourseProject1): Exploratory data analysis from a data base
-- [Assignment 2. ](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/3_ExploratoryDataAnalysis/CourseProject2)
+- [Assignment 2. Exploratory Data Analysis](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/3_ExploratoryDataAnalysis/CourseProject2): The full process of data analysis to answer specific questions about fine particulate matter (PM2.5) in United States
 
 - [Case study 1](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/blob/main/3_ExploratoryDataAnalysis/CaseStudy/SmartPhones/CaseStudySamsungData.pdf): Implementing clustering to the analysis of data 
 
 ### 5. Reproducible Research
+
+- [Assignment 1](https://github.com/IsaiasGutierrezCruz/DataScienceSpecialization/blob/main/4_ReproducibleResearch/Project1/PA1_template.pdf):The full process of data analysis in Activity Monitoring data with good practices in reproducible research
+- [Assignment 2](https://github.com/IsaiasGutierrezCruz/DataScienceSpecialization/blob/main/4_ReproducibleResearch/Project2/Project2.pdf): The full process of data analysis in severe weather events data to find patterns and insights
+
+### 6. Statistical Inference 
+
+
+### 7. Regression Models
+
+
+### 8. Practical Machine Learning 
+
+### 9. Developing Data Products 
+
+
+### 10. Data Science Capstone 
