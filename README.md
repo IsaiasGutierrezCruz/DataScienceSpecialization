@@ -23,8 +23,19 @@ This course does not have programming assignments and is an introduction to the 
 
 
 ### 2. R Programming
-- [Assignment 1. Air pollution](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/1_RProgramming/ProgrammingAssignment1)
-- [Assignment 2. Lexical Scoping](https://github.com/IsaiasGutierrezCruz/ProgrammingAssignment2)
-- [Assignment 3. Hospital Quality](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/1_RProgramming/ProgrammingAssignment3)
+- [Assignment 1. Air pollution](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/1_RProgramming/ProgrammingAssignment1): Managing multiple CSV files to merge them and to analysis them
+- [Assignment 2. Lexical Scoping](https://github.com/IsaiasGutierrezCruz/ProgrammingAssignment2): Using lexical scope to improve a function
+- [Assignment 3. Hospital Quality](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/1_RProgramming/ProgrammingAssignment3): Plotting and cleaning data to obtain insights 
 
-### 3. 
+### 3. Getting and Cleaning Data
+- [Assignment 1](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/2_GettingandCleaningData/Project): Getting and cleaning data in a tidy format
+
+#### Exercises from Quizzes
+- [QUiz to get data](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/2_GettingandCleaningData/week1): Reading and analyzing data from XML, CSV and xlsx 
+- [Quiz to get data](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/2_GettingandCleaningData/week2): Getting data from the Github's API using the protocol oauth and using SQL
+- [Quiz to explore data](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/2_GettingandCleaningData/week3): Exploring data with dplyr and other functions
+- [Quiz to explore data](https://github.com/IsaiasGutierrezCruz/datasciencecoursera/tree/main/2_GettingandCleaningData/week4): Managing dates and REGEX to explore data
+
+
+### 4. Exploratory Data Analysis 
+
